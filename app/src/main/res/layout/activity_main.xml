@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:visibility="gone"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+        android:id="@+id/filledButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Ver"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
+
+
+
+    <Button
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+        android:id="@+id/filledButton2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Finalizar"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</LinearLayout>
